@@ -1,0 +1,37 @@
+# Dependencies
+node_modules/
+venv/
+
+# WhatsApp Web.js authentication and cache
+.wwebjs_auth/
+.wwebjs_cache/
+
+# Temporary audio files
+temp_audio_*.mp3
+temp_audio_*.ogg
+temp_audio_*.wav
+
+# Logs
+logs/
+*.log
+
+# Environment variables (contains sensitive data)
+.env
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# PM2 files
+.pm2/

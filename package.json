@@ -1,0 +1,38 @@
+{
+  "name": "whatsapp-jobs",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "start:local": "USE_LOCAL_MODEL=true node main.js",
+    "pm2:start": "pm2 start ecosystem.config.js && npm run pm2:logs",
+    "pm2:start:local": "USE_LOCAL_MODEL=true pm2 start ecosystem.config.js && npm run pm2:logs",
+    "pm2:stop": "pm2 stop whatsapp-transcriber",
+    "pm2:restart": "pm2 restart whatsapp-transcriber",
+    "pm2:logs": "pm2 logs whatsapp-transcriber",
+    "pm2:status": "pm2 status",
+    "health": "./check-health.sh",
+    "force-recovery": "./force-recovery.sh",
+    "install:python": "pip3 install -r requirements.txt",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icarus/whatsapp-jobs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/icarus/whatsapp-jobs/issues"
+  },
+  "homepage": "https://github.com/icarus/whatsapp-jobs#readme",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.11.0",
+    "dotenv": "^17.2.1",
+    "form-data": "^4.0.4",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.32.0"
+  }
+}
