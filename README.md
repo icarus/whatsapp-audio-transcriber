@@ -1,4 +1,4 @@
-### Un bot para transcribir audios en WhatsApp, áutomaticamente y en cualquier dispositivo.
+### Un bot para transcribir audios en WhatsApp, automáticamente y en cualquier dispositivo.
 ¿Cuántas veces has tenido que pausar la música o sacarte los audífonos para escuchar un audio? Este bot resuelve eso: transcribe cualquier audio y te manda el texto por privado, déjalo corriendo y lo hará por siempre y en cualquier dispositivo.
 
 ### Setup
