@@ -291,7 +291,6 @@ async function processMedia(message) {
 
                 } else {
                     console.log('❌ Transcripción vacía o no recibida');
-                    await message.reply('❌ Ups no se pudo traducir');
                 }
 
                 // Clean up temp file
@@ -303,11 +302,6 @@ async function processMedia(message) {
             } catch (voiceError) {
                 console.error('❌ Error procesando mensaje de voz:', voiceError.message);
                 console.error('Voice error stack:', voiceError.stack);
-                try {
-                    await message.reply('❌ Error procesando mensaje de voz');
-                } catch (replyError) {
-                    console.error('❌ Error enviando respuesta de error:', replyError.message);
-                }
             }
         }
     } catch (error) {
